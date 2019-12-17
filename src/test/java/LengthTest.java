@@ -27,4 +27,10 @@ public class LengthTest {
         Length inch = new Length(Length.Unit.INCH, 0.0);
         Assert.assertNotEquals(inch,new Length(Length.Unit.INCH, 1.0));
     }
+
+    @Test
+    public void whenGivenFeetAndInchObjects_shouldNotEquals() {
+        Length feet = new Length(Length.Unit.FEET,1.0);
+        Assert.assertNotEquals(feet, new Length(Length.Unit.INCH,1.0));
+    }
 }
