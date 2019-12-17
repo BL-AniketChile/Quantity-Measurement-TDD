@@ -3,7 +3,7 @@ import com.bridgelabz.QuantityMeasurement;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class QuantityMeasurementTest {
+public class FeetTest {
 
     @Test
     public void whenGivenTwoSameFeetValueObject_ifEqual_shouldReturnTrue() {
