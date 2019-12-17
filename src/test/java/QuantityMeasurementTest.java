@@ -10,4 +10,10 @@ public class QuantityMeasurementTest {
         Feet feet = new Feet(0);
         Assert.assertEquals(feet,new Feet(0));
     }
+
+    @Test
+    public void whenGivenTwoDifferentValueObject_shouldReturnFalse() {
+        Feet feet = new Feet(0.0);
+        Assert.assertNotEquals(feet,new Feet(1.0));
+    }
 }
